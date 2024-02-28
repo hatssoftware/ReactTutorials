@@ -1,4 +1,4 @@
-# ReactTutorials
+# ReactTutorials.JSX
 ReactTutorials2024 - jednoduché projekty podle různých tutoriálů z YT  
 používáno React JSX + Vite
 
