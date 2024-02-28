@@ -33,5 +33,9 @@ button {
 
     display: block;
     width: 500px;
-    margin: 0 auto;
+    margin: 8px auto;
+}
+
+.reload-button {
+    background-color: #95fcce;
 }
