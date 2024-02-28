@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+html {
+  font-family: 'Instrument Sans', sans-serif;
+
+  --white: #fff;
+  --black: #000;
+  --pslib-blue: #4154fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.counter {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter h1 {
+  color: var(--black);
+  font-size: 2.5em;
+}
+
+.counter h2 {
+  color: var(--pslib-blue);
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.btn {
+  background-color: var(--pslib-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 1em;
+  margin-top: 0.25em;
+
+  width: 4em;
+  height: 4em;
+  
+  cursor: pointer;
+}
