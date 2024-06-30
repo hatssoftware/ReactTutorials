@@ -16,7 +16,7 @@ const filmy : object[] = [
         title: "Enola Holmesová 2",
         age: "13+",
         tags: "Vtipný | Napínavý | Rodina",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo ab culpa porro repellat vel esse, consectetur ipsam temporibus tenetur corrupti, eaque vero laudantium. Voluptatibus dolorem omnis commodi!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo."
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const filmy : object[] = [
         title: "Enola Holmesová",
         age: "13+",
         tags: "Vtipný | Napínavý | Rodina",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo ab culpa porro repellat vel esse, consectetur ipsam temporibus tenetur corrupti, eaque vero laudantium. Voluptatibus dolorem omnis commodi!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo."
     },
     {
         id: 3,
@@ -32,7 +32,7 @@ const filmy : object[] = [
         title: "Rocknrolla",
         age: "16+",
         tags: "Gangster | Napínavý | Násilí",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo ab culpa porro repellat vel esse, consectetur ipsam temporibus tenetur corrupti, eaque vero laudantium. Voluptatibus dolorem omnis commodi!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo."
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ const filmy : object[] = [
         title: "Patriot",
         age: "16+",
         tags: "Gangster | Napínavý | Násilí",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo ab culpa porro repellat vel esse, consectetur ipsam temporibus tenetur corrupti, eaque vero laudantium. Voluptatibus dolorem omnis commodi!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo."
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ const filmy : object[] = [
         title: "Telefon pana Harrigana",
         age: "16+",
         tags: "Gangster | Napínavý | Násilí",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo ab culpa porro repellat vel esse, consectetur ipsam temporibus tenetur corrupti, eaque vero laudantium. Voluptatibus dolorem omnis commodi!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo."
     },
     {
         id: 6,
@@ -56,7 +56,7 @@ const filmy : object[] = [
         title: "Stážista",
         age: "16+",
         tags: "Gangster | Napínavý | Násilí",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo ab culpa porro repellat vel esse, consectetur ipsam temporibus tenetur corrupti, eaque vero laudantium. Voluptatibus dolorem omnis commodi!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo."
     },
     {
         id: 7,
@@ -64,7 +64,7 @@ const filmy : object[] = [
         title: "Život",
         age: "13+",
         tags: "Vesmír | Napínavý | Nebezpečí",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo ab culpa porro repellat vel esse, consectetur ipsam temporibus tenetur corrupti, eaque vero laudantium. Voluptatibus dolorem omnis commodi!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo."
     },
     {
         id: 8,
@@ -72,7 +72,7 @@ const filmy : object[] = [
         title: "Kód za miliardu dolarů",
         age: "13+",
         tags: "IT | Napínavý ",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo ab culpa porro repellat vel esse, consectetur ipsam temporibus tenetur corrupti, eaque vero laudantium. Voluptatibus dolorem omnis commodi!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo."
     },
     {
         id: 9,
@@ -80,7 +80,7 @@ const filmy : object[] = [
         title: "Pracháči",
         age: "13+",
         tags: "Dokument | Napínavý ",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo ab culpa porro repellat vel esse, consectetur ipsam temporibus tenetur corrupti, eaque vero laudantium. Voluptatibus dolorem omnis commodi!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo."
     },
     {
         id: 10,
@@ -88,7 +88,7 @@ const filmy : object[] = [
         title: "Whoami",
         age: "13+",
         tags: "Gangster | Napínavý | Násilí ",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo ab culpa porro repellat vel esse, consectetur ipsam temporibus tenetur corrupti, eaque vero laudantium. Voluptatibus dolorem omnis commodi!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias natus explicabo."
     },
 ]
 
