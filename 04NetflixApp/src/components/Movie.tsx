@@ -1,10 +1,22 @@
 import "./Movie.css";
 import data from "../data";
+import MovieDeleteButton from "./MovieDeleteButton";
+import { useState } from "react";
 
 let Movie = () => { 
+    const [movies, setMovies] = useState(data);
+
+    const smazatFilm = (ID : number) => {
+        const filtrovaneFilmy = movies.filter((film : any) => {
+            return film.id !== ID;
+        })
+
+        setMovies(filtrovaneFilmy);
+    }
+
     return <div className="all-movies">
         {
-            data.map((film : any) => {
+            movies.map((film : any) => {
                 const {id, image, title, age, tags, description} = film;
 
                 return (
@@ -15,6 +27,7 @@ let Movie = () => {
                             <p>{age}</p>
                             <p>{tags}</p>
                             <p>{description}</p>
+                            <MovieDeleteButton deleteMovie={() => smazatFilm(id)}/>
                         </div>
                     </div>
                 );
