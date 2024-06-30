@@ -1,7 +1,9 @@
+import Movie from "./components/Movie";
+
 let App = () => {
-  return (<>
-  <h2>test</h2>
-  </>)
+  return (
+    <Movie />
+  )
 }
 
 export default App;
