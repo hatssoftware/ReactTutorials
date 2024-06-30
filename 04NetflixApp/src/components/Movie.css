@@ -1,14 +1,40 @@
 .all-movies {
     width: 90%;
-    margin: 0 auto;
+    margin: 40px auto;
     display: flex;
 
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+     gap: 1em;
 }
 
 .movie {
+    transform: scale(1);
+    transition: transform 0.5s;
+
     width: 300px;
-    color: white;
+    color: #e5e5e5;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.des {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    transition: transform 0.1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+
 }

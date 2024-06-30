@@ -9,11 +9,13 @@ let Movie = () => {
 
                 return (
                     <div className="movie" key={id}>
-                        <img src={image} alt="Movie" />
-                        <h3>{title}</h3>
-                        <p>{age}</p>
-                        <p>{tags}</p>
-                        <p>{description}</p>
+                        <img className="image" src={image} alt="Movie" />
+                        <div className="des">
+                            <h3>{title}</h3>
+                            <p>{age}</p>
+                            <p>{tags}</p>
+                            <p>{description}</p>
+                        </div>
                     </div>
                 );
             })
