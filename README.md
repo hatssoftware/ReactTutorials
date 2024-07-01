@@ -1,6 +1,6 @@
-# ReactTutorials.JSX
+# ReactTutorials
 ReactTutorials2024 - jednoduché projekty podle různých tutoriálů z YT  
-používáno React JSX + Vite
+používáno React JSX (v 01-03; 04 a výše již TSX) + Vite
 
 ### Instalace
 ```
