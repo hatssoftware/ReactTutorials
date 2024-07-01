@@ -4,7 +4,7 @@ používáno React (v 01-03 JS; 04 a výše již TS) + Vite
 
 ### Instalace
 ```
-npm create vite@latest nazev-projektu -- --template react
+npm create vite@latest
 cd nazev-projektu
 npm install
 npm run dev
@@ -20,6 +20,6 @@ npm run dev
 
 ### Zdroje, učivo, inspirace
 * [David Šetek - HSB: React - posuňte své webové aplikace na nový level](https://www.youtube.com/playlist?list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx)
-* [Programming with Mosh: React Tutorial for Beginners](https://youtu.be/SqcY0GlETPk) **⚠️ TypeScript**
+* [Programming with Mosh: React Tutorial for Beginners](https://youtu.be/SqcY0GlETPk)
 * [Barevné palety od Adobe: color.adobe.com](https://color.adobe.com/cs/explore)
 * [Ikony od FontAwesome](https://fontawesome.com/docs/web/use-with/react/)
