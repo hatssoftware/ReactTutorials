@@ -1,20 +1,23 @@
 import "./Movie.css";
 import data from "../data";
 import MovieDeleteButton from "./MovieDeleteButton";
+import DeleteAllMovies from "./DeleteAllMovies";
+import RefreshMovies from "./RefreshMovies";
 import { useState } from "react";
 
 let Movie = () => { 
     const [movies, setMovies] = useState(data);
 
-    const smazatFilm = (ID : number) => {
+    const smazatFilm = (ID : number) => {        
         const filtrovaneFilmy = movies.filter((film : any) => {
             return film.id !== ID;
         })
 
         setMovies(filtrovaneFilmy);
     }
-
-    return <div className="all-movies">
+    
+    return <>
+    <div className="all-movies">
         {
             movies.map((film : any) => {
                 const {id, image, title, age, tags, description} = film;
@@ -33,7 +36,11 @@ let Movie = () => {
                 );
             })
         }
-    </div>
+
+        </div>
+        <DeleteAllMovies deleteAllMovies={() => { setMovies([]); }} />
+        <RefreshMovies refreshMovies={() => { setMovies(data) }} />
+    </>
 }
 
 export default Movie;

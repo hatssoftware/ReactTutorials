@@ -1,0 +1,17 @@
+.middle-button {
+    width: 400px;
+    margin: 12px auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 50px;
+    color: white;
+    padding: 0.5em 0;
+
+    cursor: pointer;
+}
