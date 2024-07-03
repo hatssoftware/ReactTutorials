@@ -8,6 +8,10 @@ body {
     max-width: 300px;
     border: 1px solid #ccc;
     border-radius: 16px;
+
+
+    transform: scale(1);
+    transition: ease-in-out 0.2s;
 }
 
 .movie h3 {
@@ -35,3 +39,9 @@ body {
 .descs {
     padding: 0 1em;
 }
+
+.movie:hover {
+    transform: scale(1.025);
+    transition: ease-in-out 0.2s;
+}
+

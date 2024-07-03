@@ -4,6 +4,8 @@ import image3 from "/src/images/movie3.png"
 import image4 from "/src/images/movie4.png"
 import image5 from "/src/images/movie5.png"
 import image6 from "/src/images/movie6.png"
+import image7 from "/src/images/movie7.png"
+import image8 from "/src/images/movie8.png"
 
 const allMovies = [
     {
@@ -59,6 +61,24 @@ const allMovies = [
         tags: "Rodinný * Napínavý * Romantický",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
         category: "akční"
+    },
+    {
+        id: 7,
+        image: image7,
+        title: "Život",
+        age: "+16",
+        tags: "Rodinný * Napínavý * Romantický",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+        category: "horor"
+    },
+    {
+        id: 8,
+        image: image8,
+        title: "Kód za miliardu dolarů",
+        age: "+16",
+        tags: "Rodinný * Napínavý * Romantický",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+        category: "horor"
     },
 ];
 

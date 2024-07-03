@@ -1,7 +1,8 @@
 const categories = [
     "komedie",
     "akční",
-    "romantický"
+    "romantický",
+    "horor"
 ];
 
 export default categories;

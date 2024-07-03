@@ -3,7 +3,18 @@
     color: #fff;
     border: none;
     border-radius: 50px;
-    padding: 8px 16px;
+    padding: 5px 16px;
     margin: 0 4px; 
     cursor: pointer;  
+    border: 3px solid transparent;
+
+}
+
+.category-button:hover {
+    background-color: #000;
+}
+
+.category-button:active {
+    background-color: #000;
+    border: 3px solid #E50914;
 }
