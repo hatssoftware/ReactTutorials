@@ -1,11 +1,25 @@
-let App = () => {
-  return (
-    <h2>Načítání...</h2>
-  )
+import { useState, useEffect } from "react";
 
-  return (
-    <h2>obsah</h2>
-  )
+const url = "https://cataas.com/cat";
+
+const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch(url)
+      .then((response) => {
+        console.log(response);
+      })
+      .then((data) => {
+        console.log(data);
+      })
+  }, [])
+
+  if (loading) {
+    return <h2>Načítání stránky...</h2>
+  } else {
+    return <h2>Obsah stránky</h2>
+  }
 }
 
 export default App;
