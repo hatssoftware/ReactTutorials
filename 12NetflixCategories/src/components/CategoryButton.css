@@ -1,0 +1,9 @@
+.category-button {
+    background-color: #E50914;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 16px;
+    margin: 0 4px; 
+    cursor: pointer;  
+}
