@@ -1,33 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [credentials, setCredentials] = useState<[string, string]>(["", ""]);
+  const [names, setNames] = useState<object[]>([{name: "", password: ""}]);
+  const [inline, setInline] = useState<[React.CSSProperties, React.CSSProperties]>([{border: "none"}, {border: "none"}]);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <form onSubmit={(e) => {
+        e.preventDefault();
+
+        if (credentials[0] && credentials[1]) {
+          setNames((names) => {
+            return [...names, {name: credentials[0], password: credentials[1]}];
+          });
+
+          setCredentials(["", ""]);
+          setInline([{border: "none"}, {border: "none"}]);
+        } else {
+          if (!credentials[0] && !credentials[1]) { setInline([{border: "2px solid red"}, {border: "2px solid red"}]) }
+          if (credentials[0]) { setInline([{border: "none"}, {border: "2px solid red"}]) }
+          if (credentials[1]) { setInline([{border: "2px solid red"}, {border: "none"}]) }
+        }
+        
+      }}>
+        <input style={inline[0]} type="text" className="form__input" placeholder="Uživatelské jméno" value={ credentials[0] } 
+        onChange={(e) => { setCredentials((credentials) => {
+          return [e.target.value, [...credentials][1]]
+        }) }} />
+        <input style={inline[1]} type="password" className="form__input" placeholder="Heslo" value = { credentials[1] } 
+        onChange={(e) => { setCredentials((credentials) => {
+          return [credentials[0], e.target.value]
+        }) }}/>
+        <input type="submit" value="Zaregistrovat"/>  
+      </form>   
+
+      { names.map((jmeno : any, index : number) => {
+        if (index > 0) {
+          return <p className="form__result" key={index}>{ jmeno.name };{ jmeno.password }</p>
+        }
+      }) } 
     </>
   )
 }
