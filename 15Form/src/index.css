@@ -13,9 +13,12 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 30vh;
+  height: 40vh;
   align-items: center;
-  gap: 10px;
+}
+
+form * {
+  margin-top: 10px;
 }
 
 .form__input {
@@ -47,4 +50,20 @@ form input {
 .form__result {
   width: fit-content;
   margin: 8px auto;
+}
+
+.error {
+  color: #e50914;
+  margin: 0;
+  width: fit-content;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+#error1 {
+  margin-left: -165px;
+}
+
+#error2 {
+  margin-left: -170px;
 }
