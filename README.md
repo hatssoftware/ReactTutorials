@@ -23,7 +23,7 @@ npm run dev
 * [10ShortCircuitEvaluation](https://github.com/hatssoftware/ReactTutorials/tree/main/10ShortCircuitEvaluation) - `&&, ||`
 * [11ConditionalRendering](https://github.com/hatssoftware/ReactTutorials/tree/main/11ConditionalRendering) - conditional rendering pomocí `show && <Book />` + `useState`
 * [12NetflixCategories](https://github.com/hatssoftware/ReactTutorials/tree/main/12NetflixCategories) - 04NetflixApp, filmy mají kategorie, přepínání a výpis `useState`
-* [13NetflixQnA](https://github.com/hatssoftware/ReactTutorials/tree/main/13NetflixQnA) - často kladené otázky, tlačítko ukazuje <p>, conditional rendering
+* [13NetflixQnA](https://github.com/hatssoftware/ReactTutorials/tree/main/13NetflixQnA) - často kladené otázky, tlačítko ukazuje `<p>`, conditional rendering
 
 ### Zdroje, učivo, inspirace
 * [David Šetek - HSB: React - posuňte své webové aplikace na nový level](https://www.youtube.com/playlist?list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx)
