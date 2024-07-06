@@ -22,7 +22,7 @@ npm run dev
 * [09MultipleReturns](https://github.com/hatssoftware/ReactTutorials/tree/main/09MultipleReturns) - citáty ze South Parku `useState`, API `useEffect`, loading !
 * [10ShortCircuitEvaluation](https://github.com/hatssoftware/ReactTutorials/tree/main/10ShortCircuitEvaluation) - `&&, ||`
 * [11ConditionalRendering](https://github.com/hatssoftware/ReactTutorials/tree/main/11ConditionalRendering) - conditional rendering pomocí `show && <Book />` + `useState`
-* [12NetflixCategories](https://github.com/hatssoftware/ReactTutorials/tree/main/12NetflixCategories) - 04NetflixApp, filmy mají kategorie, přepínání a výpis `useState`
+* [12NetflixCategories](https://github.com/hatssoftware/ReactTutorials/tree/main/12NetflixCategories) - 04NetflixApp + filmy mají kategorie, přepínání a výpis `useState`
 * [13NetflixQnA](https://github.com/hatssoftware/ReactTutorials/tree/main/13NetflixQnA) - často kladené otázky, tlačítko ukazuje `<p>`, conditional rendering
 
 ### Zdroje, učivo, inspirace
