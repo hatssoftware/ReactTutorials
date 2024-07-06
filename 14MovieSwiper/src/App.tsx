@@ -1,7 +1,9 @@
+import Swiper from './components/Swiper';
+
 const App = () => {
   return (
     <>
-      <h1>prdle</h1>
+      <Swiper />
     </>
   )
 }
