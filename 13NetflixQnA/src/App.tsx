@@ -1,13 +1,13 @@
-import { useState } from "react";
+import Question from "./components/Question";
 
 const App = () => {
-  const [value, setValue] = useState(0);
   
   return (
-    <>
-      <p>{value}</p>
-      <button onClick={() => setValue(value + 1)}>Increment</button>
-    </>
+    <div className="question-wrapper">
+      <Question question="Kolik stojí měsíční předplatné?" answer="Měsíční předplatné stojí 340,- Kč / měsíc."/>
+      <Question question="Jak mohu platit?" answer="Platit můžete bankovním převodem, kartou nebo hotově."/>
+      <Question question="Jak mohu zrušit předplatné?" answer="Předplatné můžete zrušit kdykoliv v nastavení vašeho účtu."/>
+    </div>
   )
 }
 
