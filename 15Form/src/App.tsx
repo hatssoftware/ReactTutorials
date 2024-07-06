@@ -10,7 +10,6 @@ const App = () => {
     <>
       <form onSubmit={(e) => {
         e.preventDefault();
-
         
         if (credentials[0] && credentials[1]) {
           if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z])(?=.*\W).{8,}$/.test(credentials[1])) {
