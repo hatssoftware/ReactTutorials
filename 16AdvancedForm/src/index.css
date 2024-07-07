@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: #e5e5e5;
+}
+
+html {
+  font-family: "Inter";
+}
+
+form {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+  
+} 
+
+.input {
+  outline: none;
+  background-color: #282828;
+  color: #e5e5e5;
+  padding: 8px;
+  border-radius: 8px;
+
+  border: 1px solid #282828;
+}
+
+form * {
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.submit-button {
+  background-color: #1db954;
+  color: #e5e5e5;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.submit-button:active {
+  background-color: #1aa34a;
+}
+

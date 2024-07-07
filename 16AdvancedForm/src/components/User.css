@@ -1,0 +1,31 @@
+.item-icon {
+    width: 32px;
+    height: 32px;
+    margin-top: 18px;
+    margin-right: 8px;
+}
+
+.user {
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid #282828;
+    background-color: #282828;
+    padding: 0 8px;
+    border-radius: 8px;
+    margin-top: 8px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 8px;
+
+    flex-grow: 1;
+}
