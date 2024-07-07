@@ -23,23 +23,17 @@ const App = () => {
       }
 
     }}>
-      <input type="name" placeholder="name" className="input" value={contactInfo.name} 
-      onChange={(event) => { setContactInfo((contactInfo : {name : string, email : string, age : string}) => {
-        return { name: event.target.value, email: contactInfo.email, age: contactInfo.age }
-      }) }}/>
-      
-      <input type="email" placeholder="e-mail" className="input" value={contactInfo.email}
-      onChange={(event) => { setContactInfo((contactInfo : {name : string, email : string, age : string}) => {
-        return { name: contactInfo.name, email: event.target.value, age: contactInfo.age}
-      }) }}/>
+      <input type="name" name="name" placeholder="name" className="input" value={contactInfo.name} 
+      onChange={(e) => { setContactInfo({...contactInfo, [e.target.name]: e.target.value}) }}/>
 
-      <input type="number" placeholder="age" className="input" value={contactInfo.age}
-      onChange={(event) => { setContactInfo((contactInfo : {name : string, email : string, age: string}) => {
-        return { name: contactInfo.name, email: contactInfo.email, age: event.target.value }
-      }) }}/>
+      <input type="email" name="email" placeholder="e-mail" className="input" value={contactInfo.email}
+      onChange={(e) => { setContactInfo({...contactInfo, [e.target.name]: e.target.value}) }}/>
+
+      <input type="number" name="age" placeholder="age" className="input" value={contactInfo.age}
+      onChange={(e) => { setContactInfo({...contactInfo, [e.target.name]: e.target.value}) }}/>
       
       <button type="submit" role="button" className="submit-button" value="send">
-        <FaPaperPlane /> Submit
+        <FaPaperPlane /> submit
       </button>
     </form>
 
