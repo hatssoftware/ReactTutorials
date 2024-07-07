@@ -14,7 +14,7 @@ const App = () => {
 
       if (contactInfo.name && contactInfo.email && contactInfo.age) {
         setUsers((users : any) => {
-          return [...users, contactInfo]
+          return [...users, {...contactInfo, id: new Date().getTime()}]
         })
 
         setContactInfo({name: "", email: "", age: ""});
@@ -44,9 +44,9 @@ const App = () => {
     </form>
 
     {
-      users.map((user : any, index) => {
+      users.map((user : any) => {
         return (
-          <User {...user} key={index} />
+          <User {...user} key={user.id} />
         )
       })
     }
