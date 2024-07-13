@@ -1,0 +1,11 @@
+.hide {
+    position: relative;
+    top: -100px;
+    transition: top 0.2s ease;
+}
+
+.show {
+    position: relative;
+    top: 0;
+    transition: top 0.2s ease;
+}
