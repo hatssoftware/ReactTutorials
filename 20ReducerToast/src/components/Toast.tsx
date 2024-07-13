@@ -1,20 +1,32 @@
 import "./Toast.css";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-// kazda
 interface Props {
     show: boolean;
     content: string;
+    close: () => void;
 }
 
-const Toast: React.FC<Props> = ({ show, content }) => {
-    let xpos = -200;
-    if (show) {
-        xpos = 0;
-    } else if (!show) {
-        xpos = -200;
-    }
+const Toast: React.FC<Props> = ({ show, content, close }) => {
+    const toastRef: React.RefObject<HTMLDivElement> = useRef(null);
+    const [xpos, setXpos] = useState(-2000);
+
+    useEffect(() => {
+        close();
+
+        if (show) {
+            setXpos(0);
+        } else {
+            const timer = setTimeout(() => {
+                setXpos(-2000);
+            }, 1500);
+
+            return () => {
+                clearTimeout(timer);
+            };
+        }
+    }, [show]);
 
     return (
         <motion.div
@@ -24,6 +36,7 @@ const Toast: React.FC<Props> = ({ show, content }) => {
                 scale: 1,
                 rotate: 0,
             }}
+            ref={toastRef}
         >
             {content}
         </motion.div>
