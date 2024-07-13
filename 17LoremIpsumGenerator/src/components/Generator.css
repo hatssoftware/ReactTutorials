@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.container h1,
+form {
+    text-align: center;
+}
+
+.generate-button {
+    background-color: #af4c4c;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+}
+
+.generate-input {
+    font-size: 1.125rem;
+}

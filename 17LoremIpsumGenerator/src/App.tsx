@@ -1,7 +1,12 @@
+import Generator from "./components/Generator";
+
 const App = () => {
-  return (
-    <h1>Tak to bez pardónu</h1>
-  )
-}
+    return (
+        <div className="container">
+            <h1>Lorem ipsum generator</h1>
+            <Generator />
+        </div>
+    );
+};
 
 export default App;
