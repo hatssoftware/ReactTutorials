@@ -1,0 +1,30 @@
+.nav-logo {
+    width: 110px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+}
+
+.button {
+    display: none;
+}
