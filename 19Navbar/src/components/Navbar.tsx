@@ -11,17 +11,18 @@ const Navbar = () => {
     const toggleShow = () => {
         setShow(!show);
     };
+
     return (
         <nav className="navbar">
             <div className="nav-header">
                 <img src={logo} className="nav-logo" alt="Netflix" />
                 {show ? (
-                    <GiHamburgerMenu className="button" onClick={toggleShow} />
-                ) : (
                     <IoClose className="button" onClick={toggleShow} />
+                ) : (
+                    <GiHamburgerMenu className="button" onClick={toggleShow} />
                 )}
             </div>
-            <div className="nav-links">
+            <div className={`${show ? "nav-links show" : "nav-links hide"}`}>
                 <ul>
                     {links.map((link) => {
                         return (
