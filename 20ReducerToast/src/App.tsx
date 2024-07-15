@@ -2,28 +2,36 @@ import Toast from "./components/Toast";
 import { useState, useReducer } from "react";
 
 const reducer = (state: any, action: any) => {
-    if (action.type === "ADD_MOVIE") {
-        return {
-            ...state,
-            movies: [...state.movies, action.payload],
-            showToast: true,
-            toastContent: "Film byl přidán",
-        };
-    }
+    switch (action.type) {
+        case "ADD_MOVIE":
+            return {
+                ...state,
+                movies: [...state.movies, action.payload],
+                showToast: true,
+                toastContent: "Film byl přidán",
+            };
+        case "INVALID_INPUT":
+            return {
+                ...state,
+                showToast: true,
+                toastContent: "Neplatný název",
+            };
+        case "CLOSE_NOTIFICATION":
+            return {
+                ...state,
+                showToast: false,
+            };
+        case "REMOVE_MOVIE":
+            const filteredMovies = state.movies.filter((movie: any) => {
+                return movie.id !== action.payload;
+            });
 
-    if (action.type === "INVALID_INPUT") {
-        return {
-            ...state,
-            showToast: true,
-            toastContent: "Neplatný název",
-        };
-    }
-
-    if (action.type === "CLOSE_NOTIFICATION") {
-        return {
-            ...state,
-            showToast: false
-        };
+            return {
+                ...state,
+                movies: filteredMovies,
+            };
+        default:
+            throw new Error("Neplatná action");
     }
 
     return new Error("Neplatná action");
@@ -44,13 +52,17 @@ const App = () => {
 
     const closeToast = () => {
         dispatch({
-            type: "CLOSE_NOTIFICATION"
+            type: "CLOSE_NOTIFICATION",
         });
     };
 
     return (
         <div>
-            <Toast show={state.showToast} content={state.toastContent} close={closeToast} />
+            <Toast
+                show={state.showToast}
+                content={state.toastContent}
+                close={closeToast}
+            />
             <form
                 onSubmit={(e) => {
                     e.preventDefault();
@@ -68,6 +80,8 @@ const App = () => {
                             type: "INVALID_INPUT",
                         });
                     }
+
+                    setMovieName("");
                 }}
             >
                 <input
@@ -75,12 +89,28 @@ const App = () => {
                     onChange={(e) => {
                         setMovieName(e.target.value);
                     }}
+                    value={movieName}
                 />
 
                 <input type="submit" value="Přidat" />
             </form>
             {state.movies.map((movie: any) => {
-                return <p key={movie.id}>{movie.name}</p>;
+                return (
+                    <div className="movie" key={movie.id}>
+                        <p>{movie.name}</p>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                dispatch({
+                                    type: "REMOVE_MOVIE",
+                                    payload: movie.id,
+                                });
+                            }}
+                        >
+                            X
+                        </button>
+                    </div>
+                );
             })}
         </div>
     );

@@ -37,6 +37,7 @@ const Toast: React.FC<Props> = ({ show, content, close }) => {
                 rotate: 0,
             }}
             ref={toastRef}
+            className="toast"
         >
             {content}
         </motion.div>
