@@ -1,0 +1,18 @@
+.movie {
+    max-width: 300px;
+    box-shadow: 0 0 10px var(--netflix-red);
+    border-radius: 8px;
+}
+
+.movie h3 {
+    margin: 0.5rem 0;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.movie-description {
+    padding: 0 0.5em;
+}

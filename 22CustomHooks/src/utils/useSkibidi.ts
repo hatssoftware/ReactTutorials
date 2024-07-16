@@ -2,27 +2,24 @@ import { useState, useEffect } from "react";
 
 const useSkibidi = (url: string) => {
     const [loading, setLoading] = useState(true);
-    const [coords, setCoords] = useState<string[]>(["", ""]);
-
-    const getCoordsAPI = () => {
-        fetch(url)
-            .then((res) => {
-                return res.json();
-            })
-            .then((js) => {
-                setLoading(false);
-                return setCoords([
-                    js.iss_position.longitude,
-                    js.iss_position.latitude,
-                ]);
-            });
-    };
+    const [data, setData] = useState<string[]>(["", ""]);
 
     useEffect(() => {
-        getCoordsAPI();
-    }, []);
+        const getCoordsAPI = () => {
+            fetch(url)
+                .then((res) => {
+                    return res.json();
+                })
+                .then((js) => {
+                    setLoading(false);
+                    return setData(js);
+                });
+        };
 
-    return { loading, coords };
+        getCoordsAPI();
+    }, [url]);
+
+    return { loading, data };
 };
 
 export default useSkibidi;
