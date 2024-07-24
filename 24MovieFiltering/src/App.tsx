@@ -7,7 +7,6 @@ const App = () => {
   const [categories, setCategories] = useState([""]);
   const [currentCategory, setCurrentCategory] = useState("Všechny");
 
-  // fetch all categories from each p class tags
   useEffect(() => {
     const tags = movies.map((movie) => movie.tags);
     const uniqueTags = [...new Set(tags.flat())];
